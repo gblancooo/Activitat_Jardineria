@@ -15,6 +15,9 @@ public class main {
 		nombre = "Juana";
 		// Codigo para buscar por nombre
 
+		nombre = buscarNombre.main(args);
+		System.out.println("Has escogijo: " + nombre);
+		
 		System.out.println("Usuario selecciona buscar por origen");
 		lugar = "Andorra";
 		// Codigo para buscar por origen
@@ -43,6 +46,11 @@ public class main {
 
 		System.out.println("Usuario finaliza la compra");
 		// Codigo para finalizar la compra y que salga el total de la compra
+	}
+
+	private static String buscarNombre(String[] args) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	//Funciones extra que considereis necesarias
