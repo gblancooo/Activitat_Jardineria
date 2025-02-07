@@ -29,7 +29,8 @@ public class main {
 	
 		System.out.println("Usuario selecciona ordenar por precio de mayor a menor");
 		// Codigo para ordenar de mayor a menor precio
-
+		precioMayorMenor.main(args);
+		
 		System.out.println("Usuario selecciona varios productos para comprar");
 		// Codigo para seleccionar primer producto
 		nombre = "Hierba de los bosques";
