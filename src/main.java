@@ -21,7 +21,8 @@ public class main {
 		System.out.println("Usuario selecciona buscar por origen");
 		lugar = "Andorra";
 		// Codigo para buscar por origen
-
+		lugar = buscarOrigen.main(args);
+		
 		System.out.println("Usuario selecciona ordenar por precio de menor a mayor");
 		// Codigo para ordenar de mayor a menor precio
 
