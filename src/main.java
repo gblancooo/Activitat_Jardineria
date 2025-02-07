@@ -25,7 +25,8 @@ public class main {
 		
 		System.out.println("Usuario selecciona ordenar por precio de menor a mayor");
 		// Codigo para ordenar de mayor a menor precio
-
+		precioMenorMayor.main(args);
+	
 		System.out.println("Usuario selecciona ordenar por precio de menor a mayor");
 		// Codigo para ordenar de mayor a menor precio
 
