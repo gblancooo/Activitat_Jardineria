@@ -9,6 +9,8 @@ public class buscarNombre {
 		String nombre = "";
 		int parar = 1;
 		
+		System.out.println();
+		System.out.println();
 		System.out.println("BUSCAR POR NOMBRE DE PLANTA");
 		System.out.println("LISTA");
 		for (int i = 0; i < main.hierba.length; i++) {

@@ -10,6 +10,8 @@ public class buscarOrigen {
 		String origen = "";
 		int parar = 1;
 		
+		System.out.println();
+		System.out.println();
 		System.out.println("BUSCAR POR ORIGEN DE PLANTA");
 		System.out.println("LISTA");
 		for (int i = 0; i < main.origen.length; i++) {
