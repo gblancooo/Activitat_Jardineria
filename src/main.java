@@ -4,7 +4,8 @@ public class main {
 	public static String[] hierba = { "Maria Juana", "Hierba de los bosques", "La seta feliz", "El oro verde" };
 	public static String[] origen = { "Mexico", "Andorra", "Marrueco", "Palestina" };
 	public static double[] precio = { 1.70, 4.20, 2.47, 1.33 };
-
+	public static String[] productosmax = new String[10];
+	
 	// Variables publicas extra que considereis
 
 	public static void main(String[] args) {
@@ -13,6 +14,8 @@ public class main {
 		
 		String nombre, lugar;
 		double cantidad;
+		
+		int productosentrar = 0;
 		
 		int parar = 0;
 		System.out.println("Buenos dias! Que quieres hacer hoy?");
@@ -58,23 +61,18 @@ public class main {
 			
 			else if(parar == 5) {
 				
-				System.out.println("Usuario selecciona varios productos para comprar");
-				System.out.println("Cuantos productos quieres?");
-				int cantidadproductos = scan_numeros.nextInt();
-				String[] productos = new String[cantidadproductos];
 				
-				int contador = 1;
-				for (int i = 0; i < productos.length; i++) {
-					System.out.println("Producto: " + contador);
-					productos[i] = seleccionar_productos.main(args);
-					contador++;
-				}
-				
-				mostrarproductos(productos);
-				
+				productosentrar = 1;
 			}
 			
 			else if(parar == 6) {
+				
+				if(productosentrar == 0) {
+					System.out.println("No tienes ningun producto seleccionado");
+				}
+				else {
+					
+				}
 				
 				// Codigo para eliminar elemento del carrito
 				System.out.println("Usuario elimina elemento de su carrito");
@@ -117,10 +115,10 @@ public class main {
 		
 	}
 	
-	public static void mostrarproductos(String productos[]) {
-		System.out.println("Tus productos finales son:");
-		for (int i = 0; i < productos.length; i++) {
-			System.out.println(productos[i]);
+	public static void mostrarproductos(String productosmax[]) {
+		System.out.println("Tus productos son:");
+		for (int i = 0; i < productosmax.length; i++) {
+			System.out.println(productosmax[i]);
 		}
 	}
 }
