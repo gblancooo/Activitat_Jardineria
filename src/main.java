@@ -36,7 +36,7 @@ public class main {
 
 				// Codigo para buscar por origen
 				System.out.println("Usuario selecciona buscar por origen");
-				lugar = buscarOrigen.main(args);
+				buscarOrigen.main(args);
 				
 			}
 			

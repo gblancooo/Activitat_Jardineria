@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class buscarOrigen {
 
-	public static String main(String[] args) {
+	public static void main(String[] args) {
 		
 		Scanner scan_numeros = new Scanner(System.in);
 		Scanner scan_letras = new Scanner(System.in);
@@ -23,7 +23,15 @@ public class buscarOrigen {
 		
 		origen = verificar(origen, parar);
 		
-		return origen;
+		for (int i = 0; i < main.hierba.length; i++) {
+			if(origen.equals(main.origen[i])) {
+				
+				System.out.println("ORIGEN: ---------- NOMBRE---------- PRECIO");
+				System.out.println(main.origen[i] + " - " + main.hierba[i] + " - " + main.precio[i]);
+			}
+		}
+		
+		
 		
 			
 	}
