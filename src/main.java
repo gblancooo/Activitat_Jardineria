@@ -70,18 +70,16 @@ public class main {
 					contador++;
 				}
 				
-				System.out.println("Tus productos finales son:");
-				for (int i = 0; i < productos.length; i++) {
-					System.out.println(productos[i]);
-				}
+				mostrarproductos(productos);
 				
 			}
 			
 			else if(parar == 6) {
 				
 				// Codigo para eliminar elemento del carrito
-				System.out.println("Usuario elimina el segundo elemento de su carrito");
-
+				System.out.println("Usuario elimina elemento de su carrito");
+				
+				
 			}
 			
 			else if(parar == 7) {
@@ -119,5 +117,10 @@ public class main {
 		
 	}
 	
-	
+	public static void mostrarproductos(String productos[]) {
+		System.out.println("Tus productos finales son:");
+		for (int i = 0; i < productos.length; i++) {
+			System.out.println(productos[i]);
+		}
+	}
 }
