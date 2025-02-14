@@ -16,10 +16,11 @@ public class main {
 		
 		int parar = 0;
 		System.out.println("Buenos dias! Que quieres hacer hoy?");
+		mostrarmenu();
 		
 		while( parar != 9) {
 			
-			System.out.println("Que opcion quieres elegir?");
+			System.out.println("Que opcion quieres elegir? (8 - Mostrar Menu) ");
 			parar = scan_numeros.nextInt();
 			
 			if(parar == 1) {
@@ -31,37 +32,59 @@ public class main {
 				
 			}
 			
-			// Codigo para buscar por origen
-			System.out.println("Usuario selecciona buscar por origen");
-			lugar = buscarOrigen.main(args);
-			
-			// Codigo para ordenar de mayor a menor precio
-			System.out.println("Usuario selecciona ordenar por precio de menor a mayor");
-			precioMenorMayor.main(args);
-		
-			System.out.println("Usuario selecciona ordenar por precio de mayor a menor");
-			// Codigo para ordenar de mayor a menor precio
-			precioMayorMenor.main(args);
-			
-			// Codigo para seleccionar primer producto
-			System.out.println("Usuario selecciona varios productos para comprar");
-			nombre = "Hierba de los bosques";
-			cantidad = 3;
+			else if(parar == 2) {
 
-			// Codigo para seleccionar segundo producto
-			nombre = "El oro verde";
-			cantidad = 1;
-
-			// Codigo para seleccionar tercer producto
-			nombre = "La seta feliz";
-			cantidad = 2.5;
+				// Codigo para buscar por origen
+				System.out.println("Usuario selecciona buscar por origen");
+				lugar = buscarOrigen.main(args);
+				
+			}
 			
-			// Codigo para eliminar elemento del carrito
-			System.out.println("Usuario elimina el segundo elemento de su carrito");
-
-			System.out.println("Usuario finaliza la compra");
-			// Codigo para finalizar la compra y que salga el total de la compra
+			else if(parar == 3) {
+				
+				// Codigo para ordenar de mayor a menor precio
+				System.out.println("Usuario selecciona ordenar por precio de menor a mayor");
+				precioMenorMayor.main(args);
+				
+			}
 			
+			else if(parar == 4) {
+				
+				System.out.println("Usuario selecciona ordenar por precio de mayor a menor");
+				// Codigo para ordenar de mayor a menor precio
+				precioMayorMenor.main(args);
+			
+			}
+			
+			else if(parar == 5) {
+				
+				// Codigo para seleccionar primer producto
+				System.out.println("Usuario selecciona varios productos para comprar");
+				
+				
+			}
+			
+			else if(parar == 6) {
+				
+				// Codigo para eliminar elemento del carrito
+				System.out.println("Usuario elimina el segundo elemento de su carrito");
+
+			}
+			
+			else if(parar == 7) {
+
+				System.out.println("Usuario finaliza la compra");
+				// Codigo para finalizar la compra y que salga el total de la compra
+				
+			}
+			
+			else if(parar == 8) {
+				mostrarmenu();
+			}
+			
+			else if(parar == 9) {
+			System.out.println("HAS DECIDIDO SALIR");
+			}
 			
 		}
 		
