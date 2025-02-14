@@ -59,8 +59,19 @@ public class main {
 			else if(parar == 5) {
 				
 				System.out.println("Usuario selecciona varios productos para comprar");
+				System.out.println("Cuantos productos quieres?");
 				int cantidadproductos = scan_numeros.nextInt();
 				String[] productos = new String[cantidadproductos];
+				
+				for (int i = 0; i < productos.length; i++) {
+					System.out.println("Producto: " + i + 1);
+					productos[i] = seleccionar_productos.main(args);
+				}
+				
+				System.out.println("Tus productos finales son:");
+				for (int i = 0; i < productos.length; i++) {
+					System.out.println(productos[i]);
+				}
 				
 			}
 			
@@ -90,6 +101,7 @@ public class main {
 		
 	}
 
+	//Funciones extra que considereis necesarias
 	public static void mostrarmenu() {
 		System.out.println("MENU:");
 		System.out.println("1 - Buscar planta por nombre");
@@ -105,5 +117,5 @@ public class main {
 		
 	}
 	
-	//Funciones extra que considereis necesarias
+	
 }
