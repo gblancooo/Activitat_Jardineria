@@ -17,8 +17,16 @@ public class seleccionar_productos {
 		System.out.println("Que producto quieres seleccionar?");
 		producto = scan_letras.nextLine();
 		
-		int parar = 0;
+		producto = verificar(producto);
+			
+		return producto;
 		
+	}
+	
+	public static String verificar(String producto) {
+		Scanner scan_letras = new Scanner(System.in);
+		int parar = 0;
+
 		while(parar != 1) {
 			for (int i = 0; i < main.hierba.length; i++) {
 				if(main.hierba[i].equals(producto)) {
@@ -36,8 +44,9 @@ public class seleccionar_productos {
 			
 		}
 		
-		
 		return producto;
+	
+		
 		
 	}
 
