@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class buscarNombre {
 	
-		public static String main(String[] args) {
+		public static void main(String[] args) {
 		Scanner scan_numeros = new Scanner(System.in);
 		Scanner scan_letras = new Scanner(System.in);
 	
@@ -22,7 +22,13 @@ public class buscarNombre {
 		
 		nombre = verificar(nombre, parar);
 		
-		return nombre;
+		for (int i = 0; i < main.hierba.length; i++) {
+			if(nombre.equals(main.hierba[i])) {
+				
+				System.out.println("NOMBRE: ---------- ORIGEN ---------- PRECIO");
+				System.out.println(main.hierba[i] + " - " + main.origen[i] + " - " + main.precio[i]);
+			}
+		}
 		
 		
 	

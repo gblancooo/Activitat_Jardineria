@@ -27,8 +27,8 @@ public class main {
 
 				// Codigo para buscar por nombre
 				System.out.println("Usuario selecciona buscar por nombre");
-				nombre = buscarNombre.main(args);
-				System.out.println("Has escogijo: " + nombre);
+				buscarNombre.main(args);
+				
 				
 			}
 			
