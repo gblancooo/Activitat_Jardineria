@@ -58,8 +58,8 @@ public class main {
 			
 			else if(parar == 5) {
 				
-				// Codigo para seleccionar primer producto
 				System.out.println("Usuario selecciona varios productos para comprar");
+				int cantidad = 0;
 				
 				
 			}
