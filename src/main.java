@@ -63,9 +63,11 @@ public class main {
 				int cantidadproductos = scan_numeros.nextInt();
 				String[] productos = new String[cantidadproductos];
 				
+				int contador = 1;
 				for (int i = 0; i < productos.length; i++) {
-					System.out.println("Producto: " + i + 1);
+					System.out.println("Producto: " + contador);
 					productos[i] = seleccionar_productos.main(args);
+					contador++;
 				}
 				
 				System.out.println("Tus productos finales son:");
