@@ -59,8 +59,8 @@ public class main {
 			else if(parar == 5) {
 				
 				System.out.println("Usuario selecciona varios productos para comprar");
-				int cantidad = 0;
-				
+				int cantidadproductos = scan_numeros.nextInt();
+				String[] productos = new String[cantidadproductos];
 				
 			}
 			
