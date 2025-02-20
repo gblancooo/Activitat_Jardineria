@@ -82,9 +82,6 @@ public class main {
 				}
 				
 				
-				// Codigo para eliminar elemento del carrito
-				System.out.println("Usuario elimina elemento de su carrito");
-				
 				
 			}
 			
