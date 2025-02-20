@@ -23,10 +23,12 @@ public class eliminar_elemento {
 			int producto = scan_numeros.nextInt();
 			producto = verificar(producto, cantidad);
 			
+			
 			main.productosmax[producto-1] = null; 
 			
-			organizararray(productosmax);
+			
 		}
+		
 		
 		
 		
@@ -65,18 +67,6 @@ public class eliminar_elemento {
 		return producto;
 	}
 	
-	public static void organizararray(String[] productosmax) {
-        for (int i = 0; i < productosmax.length - 1; i++) {
-            
-        	if (productosmax[i] == null) {
-                for (int j = i; j < productosmax.length - 1; j++) {
-                    productosmax[j] = productosmax[j + 1];
-               
-            	}
-            
-        	}
-        
-        }
-
-	}
+	
+     
 }

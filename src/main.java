@@ -82,6 +82,17 @@ public class main {
 					mostrarproductos(productosmax);
 				}
 				
+				//ver si no hay productos seleccionados
+				int contar = 0;
+				for (int i = 0; i < args.length; i++) {
+					if(productosmax[i] == null) {
+						contar++;
+					}
+				}
+				
+				if (contar == 9) {
+					productosentrar = 0;
+				}
 				
 
 				
