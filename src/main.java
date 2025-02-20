@@ -74,14 +74,17 @@ public class main {
 				
 				if(productosentrar == 0) {
 					System.out.println("No tienes ningun producto seleccionado");
+					System.out.println();
 				}
 				else {
-
+					eliminar_elemento.main(productosmax);
 					
-					
+					System.out.println("Tus productos finales son:");
+					mostrarproductos(productosmax);
 				}
 				
 				
+
 				
 			}
 			
