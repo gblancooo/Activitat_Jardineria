@@ -80,7 +80,6 @@ public class main {
 				
 				}
 				
-				System.out.println("Tus carrito es:");
 				mostrarproductos(productosmax);
 				
 				// Codigo para eliminar elemento del carrito
@@ -125,9 +124,18 @@ public class main {
 	}
 	
 	public static void mostrarproductos(String productosmax[]) {
+			
 		System.out.println("Tus productos son:");
 		for (int i = 0; i < productosmax.length; i++) {
-			System.out.println(productosmax[i]);
+			if(productosmax[i] == null) {
+				System.out.print("");
+				
+			}
+			else {
+				System.out.println(i+1 + " - " +  productosmax[i]);
+			}
+			
 		}
+		System.out.println();
 	}
 }
