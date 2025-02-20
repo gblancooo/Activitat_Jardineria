@@ -49,7 +49,7 @@ public class eliminar_elemento {
 			}
 
 			
-			if(main.productosmax[producto] == null) {
+			if(main.productosmax[producto-1] == null) {
 				System.out.println("Ese producto esta vacio dime otro");
 				producto = scan_numeros.nextInt();
 

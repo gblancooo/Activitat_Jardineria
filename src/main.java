@@ -71,6 +71,18 @@ public class main {
 			}
 			
 			else if(parar == 6) {
+				//ver si no hay productos seleccionados
+				int contar = 0;
+				for (int i = 0; i < productosmax.length; i++) {
+					if(productosmax[i] == null) {
+						contar++;
+					}
+				}
+				
+				if (contar == productosmax.length) {
+					productosentrar = 0;
+				}
+				
 				
 				if(productosentrar == 0) {
 					System.out.println("No tienes ningun producto seleccionado");
@@ -82,17 +94,7 @@ public class main {
 					mostrarproductos(productosmax);
 				}
 				
-				//ver si no hay productos seleccionados
-				int contar = 0;
-				for (int i = 0; i < args.length; i++) {
-					if(productosmax[i] == null) {
-						contar++;
-					}
-				}
 				
-				if (contar == 9) {
-					productosentrar = 0;
-				}
 				
 
 				
