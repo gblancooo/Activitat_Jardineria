@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class seleccionar_productos {
 
-	public static String main(String[] args) {
+	public static void main(String[] args) {
 		Scanner scan_letras = new Scanner(System.in);
 
 		String producto = "";
@@ -19,7 +19,7 @@ public class seleccionar_productos {
 		
 		producto = verificar(producto);
 			
-		return producto;
+		
 		
 	}
 	
