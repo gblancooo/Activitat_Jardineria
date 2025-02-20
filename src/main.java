@@ -61,8 +61,13 @@ public class main {
 			
 			else if(parar == 5) {
 				
-				
+				seleccionar_productos.main(args);
+
 				productosentrar = 1;
+		
+				System.out.println("Tus carrito es:");
+				mostrarproductos(productosmax);
+				
 			}
 			
 			else if(parar == 6) {
@@ -71,8 +76,12 @@ public class main {
 					System.out.println("No tienes ningun producto seleccionado");
 				}
 				else {
-					
+
+				
 				}
+				
+				System.out.println("Tus carrito es:");
+				mostrarproductos(productosmax);
 				
 				// Codigo para eliminar elemento del carrito
 				System.out.println("Usuario elimina elemento de su carrito");

@@ -4,8 +4,15 @@ public class seleccionar_productos {
 
 	public static void main(String[] args) {
 		Scanner scan_letras = new Scanner(System.in);
+		Scanner scan_numeros = new Scanner(System.in);
 
+		
 		String producto = "";
+		int cantidad = 0;
+		
+		System.out.println("Cuantos productos quieres añadir?");
+		cantidad = scan_numeros.nextInt();
+		
 		
 		System.out.println("Productos:");
 		System.out.println("NOMBRE: ---------- ORIGEN ---------- PRECIO");
@@ -14,10 +21,19 @@ public class seleccionar_productos {
 			
 		}
 		
-		System.out.println("Que producto quieres seleccionar?");
-		producto = scan_letras.nextLine();
 		
-		producto = verificar(producto);
+		
+		int contador = 1;
+		for (int i = 0; i < cantidad; i++) {
+			System.out.println("Escribe el producto " + contador);
+			producto = scan_letras.nextLine();
+			producto = verificar(producto);
+			
+			main.productosmax[i] = producto;
+			
+			contador++;
+			
+		}
 			
 		
 		
