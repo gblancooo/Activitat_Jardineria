@@ -79,7 +79,6 @@ public class main {
 				else {
 					eliminar_elemento.main(productosmax);
 					
-					System.out.println("Tus productos finales son:");
 					mostrarproductos(productosmax);
 				}
 				
