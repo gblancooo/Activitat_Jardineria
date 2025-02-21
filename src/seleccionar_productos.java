@@ -39,7 +39,11 @@ public class seleccionar_productos {
 						producto = verificar(producto);
 						
 						main.productosmax[i] = producto;
-					
+
+						System.out.println("Que cantidad quieres?");
+						main.cantidad[i] = scan_numeros.nextInt();
+						
+						
 						break;
 					}
 										
