@@ -102,13 +102,18 @@ public class main {
 			
 			else if(parar == 7) {
 
+				
+				finalziarcompra();
+				
 				System.out.println("Usuario finaliza la compra");
 				// Codigo para finalizar la compra y que salga el total de la compra
+				
 				
 			}
 			
 			else if(parar == 8) {
 				mostrarmenu();
+				break;
 			}
 			
 			else if(parar == 9) {
@@ -150,4 +155,23 @@ public class main {
 		}
 		System.out.println();
 	}
+
+	public static void finalziarcompra() {
+		double suma = 0;
+
+				
+		for (int i = 0; i < productosmax.length; i++) {
+			if(productosmax[i] != null) {
+				for (int j = 0; j < hierba.length; j++) {
+					if(productosmax[i].equals(hierba[j])){
+						suma += precio[j];
+					}
+				}
+			}
+		}
+		
+		System.out.println("La suma total es: " + suma + "€");
+		
+	}
+	
 }
