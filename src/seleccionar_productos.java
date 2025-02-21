@@ -23,15 +23,31 @@ public class seleccionar_productos {
 		
 		
 		
-		int contador = 1;
-		for (int i = 0; i < cantidad; i++) {
-			System.out.println("Escribe el producto " + contador);
-			producto = scan_letras.nextLine();
-			producto = verificar(producto);
+		int contador = 0;
+		int contador2 = 1;
+		
+		for (int i = 0; i < main.productosmax.length; i++) {
+			if(contador == cantidad) {
+				break;
+			}
 			
-			main.productosmax[i] = producto;
-			
-			contador++;
+			else if(main.productosmax[i] == null) {
+				for (int j = 0; j < main.productosmax.length; j++) {
+					if(main.productosmax[i] == null)  {
+						System.out.println("Escribe el producto " + contador2 );
+						producto = scan_letras.nextLine();
+						producto = verificar(producto);
+						
+						main.productosmax[i] = producto;
+					
+						break;
+					}
+										
+					
+				}
+				contador2++;
+				contador++;
+			}
 			
 		}
 			
