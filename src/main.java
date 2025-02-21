@@ -5,6 +5,8 @@ public class main {
 	public static String[] origen = { "Mexico", "Andorra", "Marrueco", "Palestina" };
 	public static double[] precio = { 1.70, 4.20, 2.47, 1.33 };
 	public static String[] productosmax = new String[10];
+	public static int[] cantidad = new int[productosmax.length];
+
 	
 	// Variables publicas extra que considereis
 
@@ -149,7 +151,7 @@ public class main {
 				
 			}
 			else {
-				System.out.println(i+1 + " - " +  productosmax[i]);
+				System.out.println(i+1 + " - " +  productosmax[i] + " - " + cantidad[i]);
 			}
 			
 		}
@@ -164,7 +166,7 @@ public class main {
 			if(productosmax[i] != null) {
 				for (int j = 0; j < hierba.length; j++) {
 					if(productosmax[i].equals(hierba[j])){
-						suma += precio[j];
+						suma += precio[j]*cantidad[i];
 					}
 				}
 			}
